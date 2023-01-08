@@ -12,7 +12,12 @@ struct Args {
 
 #[derive(StructOpt)]
 enum Command {
-    Memo { name: String, extension: String },
+    Memo {
+        #[structopt(default_value = "memo")]
+        name: String,
+        #[structopt(default_value = "md")]
+        extension: String ,
+    },
 }
 
 fn main() -> anyhow::Result<()> {
