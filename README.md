@@ -1,12 +1,18 @@
 # Note
 Create and open files from the command line
 
+## SetUp
+
+```
+cargo build --release
+```
+
 ## Usage
 
 ```bash
-cargo run -- memo <filename> <file extension>
+./target/release/note <filename> <file extension>
 
 ex)
-cargo run -- memo README md
+./target/release/note README md
 ```
 ※ Set memo and md when no arguments.
